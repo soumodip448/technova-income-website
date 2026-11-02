@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="সহজে AI tools, technology tips এবং useful online resources খুঁজে নিন।" />
+  <title>TechNova — AI Tools & Technology</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--panel2:#17223b;--text:#f4f7ff;--muted:#aab6d0;--brand:#7c5cff;--brand2:#20c7b5;--line:#263451}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#0b1020eF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-size:22px;font-weight:800;letter-spacing:.3px}.logo span{color:var(--brand2)}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:11px 17px;background:linear-gradient(110deg,var(--brand),#4b8cff);color:white;font-weight:700;cursor:pointer}
+    .hero{padding:76px 0 54px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#392b7855,transparent 62%)}
+    .eyebrow{display:inline-block;padding:6px 12px;border:1px solid #51458a;border-radius:30px;color:#c8bcff;font-size:13px}
+    h1{font-size:clamp(34px,6vw,60px);line-height:1.12;margin:20px auto 14px;max-width:850px}
+    h1 em{font-style:normal;color:#8c7aff}.hero p{color:var(--muted);max-width:650px;margin:0 auto 25px}
+    .search{display:flex;gap:9px;max-width:610px;margin:26px auto 0;padding:7px;background:white;border-radius:15px}
+    .search input{min-width:0;flex:1;border:0;outline:0;padding:10px 12px;font-size:15px;color:#182033;background:transparent}
+    .search button{white-space:nowrap}.section{padding:48px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}
+    h2{font-size:28px;margin:0}.sub{color:var(--muted);margin:5px 0 0}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+    .filter{background:var(--panel);border:1px solid var(--line);color:var(--muted);padding:8px 13px;border-radius:30px;cursor:pointer}
+    .filter.active,.filter:hover{background:#30265f;color:white;border-color:#7561dc}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:19px;transition:.2s}
+    .card:hover{transform:translateY(-4px);border-color:#6252bd}.tool-icon{font-size:27px;width:48px;height:48px;display:grid;place-items:center;background:var(--panel2);border-radius:13px}
+    .card h3{margin:13px 0 5px;font-size:18px}.card p{margin:0 0 15px;color:var(--muted);font-size:14px;min-height:44px}
+    .tag{font-size:11px;color:#8ee8db;background:#143b3a;padding:4px 8px;border-radius:20px}
+    .card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.visit{color:#b9aaff;font-weight:700;font-size:14px}
+    .ad-box{margin:30px 0;padding:22px;border:1px dashed #53617e;border-radius:14px;text-align:center;color:#8794af;background:#10182a}
+    .ad-box strong{display:block;color:#c6cee0;margin-bottom:4px}.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .blog-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}.blog-card small{color:var(--brand2)}
+    .blog-card h3{margin:9px 0}.blog-card p{color:var(--muted);font-size:14px}
+    .cta{background:linear-gradient(120deg,#282052,#123a45);border:1px solid #51458a;border-radius:20px;padding:30px;text-align:center}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .empty{display:none;color:var(--muted);padding:25px;text-align:center;grid-column:1/-1}
+    @media(max-width:800px){.grid,.blog-grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}}
+    @media(max-width:560px){nav{height:auto;min-height:65px;flex-wrap:wrap;padding:12px 0}.navlinks{order:3;width:100%;justify-content:space-between}.hero{padding:55px 0 35px}.grid,.blog-grid{grid-template-columns:1fr}.section-head{display:block}.search{padding:5px}.search input{font-size:13px}.search .btn{padding:10px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#">Tech<span>Nova</span>.</a>
+    <div class="navlinks"><a href="#tools">AI Tools</a><a href="#blog">Articles</a><a href="#about">About</a></div>
+    <a class="btn" href="#tools">Explore Tools</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">✦ SMART TOOLS • SIMPLE TECHNOLOGY</span>
+      <h1>আপনার কাজকে করুন <em>আরও সহজ</em></h1>
+      <p>দরকারি AI tools, online resources এবং technology tips—সবকিছু এক জায়গায় খুঁজে নিন।</p>
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="যেমন: image, writing, design..." aria-label="টুল খুঁজুন" />
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section wrap" id="tools">
+    <div class="section-head"><div><h2>জনপ্রিয় AI Tools</h2><p class="sub">আপনার প্রয়োজন অনুযায়ী একটি টুল বেছে নিন।</p></div></div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-category="all">সবগুলো</button>
+      <button class="filter" data-category="writing">Writing</button>
+      <button class="filter" data-category="image">Image</button>
+      <button class="filter" data-category="video">Video</button>
+      <button class="filter" data-category="design">Design</button>
+    </div>
+    <div class="grid" id="toolGrid">
+      <article class="card" data-category="writing" data-search="chatgpt writing text answer ai">
+        <div class="tool-icon">✍️</div><h3>ChatGPT</h3><p>লেখালেখি, আইডিয়া, শেখা ও নানা কাজে AI সহকারী।</p>
+        <div class="card-bottom"><span class="tag">Writing</span><a class="visit" href="https://chatgpt.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+      </article>
+      <article class="card" data-category="image" data-search="canva image photo graphic design">
+        <div class="tool-icon">🎨</div><h3>Canva</h3><p>সহজে পোস্টার, থাম্বনেইল ও সোশ্যাল মিডিয়া ডিজাইন করুন।</p>
+        <div class="card-bottom"><span class="tag">Design</span><a class="visit" href="https://www.canva.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+      </article>
+      <article class="card" data-category="image" data-search="adobe firefly image generate">
+        <div class="tool-icon">🖼️</div><h3>Adobe Firefly</h3><p>AI দিয়ে ছবি তৈরি ও সৃজনশীল ডিজাইনের কাজ করুন।</p>
+        <div class="card-bottom"><span class="tag">Image</span><a class="visit" href="https://firefly.adobe.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+      </article>
+      <article class="card" data-category="video" data-search="capcut video editing">
+        <div class="tool-icon">🎬</div><h3>CapCut</h3><p>ভিডিও এডিট, ক্যাপশন ও সোশ্যাল ভিডিও তৈরি করুন।</p>
+        <div class="card-bottom"><span class="tag">Video</span><a class="visit" href="https://www.capcut.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+      </article>
+      <article class="card" data-category="writing" data-search="grammarly writing grammar">
+        <div class="tool-icon">📝</div><h3>Grammarly</h3><p>ইংরেজি লেখার বানান, ব্যাকরণ ও স্পষ্টতা উন্নত করুন।</p>
+        <div class="card-bottom"><span class="tag">Writing</span><a class="visit" href="https://www.grammarly.com/" target="_blank" rel="noopener">Visit ↗</a></div>
+      </article>
+      <article class="card" data-category="design" data-search="remove bg background photo">
+        <div class="tool-icon">✨</div><h3>Remove.bg</h3><p>ছবির ব্যাকগ্রাউন্ড দ্রুত সরিয়ে ফেলুন।</p>
+        <div class="card-bottom"><span class="tag">Design</span><a class="visit" href="https://www.remove.bg/" target="_blank" rel="noopener">Visit ↗</a></div>
+      </article>
+      <div class="empty" id="emptyState">কোনো টুল পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।</div>
+    </div>
+
+    <div class="ad-box">
+      <strong>Advertisement Space</strong>
+      এখানে Google AdSense বিজ্ঞাপন বসানো যাবে — AdSense অনুমোদনের পরে।
+    </div>
+  </section>
+
+  <section class="section wrap" id="blog">
+    <div class="section-head"><div><h2>সর্বশেষ আর্টিকেল</h2><p class="sub">পাঠকদের জন্য সহজ ভাষায় প্রযুক্তি বিষয়ক লেখা।</p></div></div>
+    <div class="blog-grid">
+      <article class="blog-card"><small>AI GUIDE</small><h3>AI কীভাবে আমাদের দৈনন্দিন কাজে সাহায্য করে?</h3><p>AI দিয়ে লেখালেখি, পরিকল্পনা ও শেখার কাজ আরও সহজ করার কয়েকটি উপায়।</p></article>
+      <article class="blog-card"><small>CREATOR TIPS</small><h3>ভালো YouTube Thumbnail বানানোর টিপস</h3><p>রং, লেখা ও ছবির সঠিক ব্যবহার করে আকর্ষণীয় থাম্বনেইল তৈরি করুন।</p></article>
+      <article class="blog-card"><small>TECH TIPS</small><h3>নতুনদের জন্য দরকারি ৫টি ফ্রি অনলাইন টুল</h3><p>পড়াশোনা ও কাজের জন্য কাজে লাগতে পারে এমন কিছু অনলাইন রিসোর্স।</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="about">
+    <div class="cta"><h2>প্রযুক্তি শিখুন, দক্ষতা বাড়ান</h2><p class="sub">TechNova — useful tools and practical guides in one place.</p></div>
+  </section>
+</main>
+
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> TechNova. All rights reserved.</span><span><a href="#">Privacy Policy</a> · <a href="#">Contact</a></span></div></footer>
+<script>
+  const cards = [...document.querySelectorAll('.card')];
+  const filters = [...document.querySelectorAll('.filter')];
+  const input = document.getElementById('searchInput');
+  const empty = document.getElementById('emptyState');
+  let category = 'all';
+
+  function updateTools(){
+    const term = input.value.trim().toLowerCase();
+    let visible = 0;
+    cards.forEach(card => {
+      const matchesCategory = category === 'all' || card.dataset.category === category;
+      const matchesText = !term || (card.dataset.search + ' ' + card.innerText).toLowerCase().includes(term);
+      const show = matchesCategory && matchesText;
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+    empty.style.display = visible ? 'none' : 'block';
+  }
+  filters.forEach(button => button.addEventListener('click', () => {
+    filters.forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    category = button.dataset.category;
+    updateTools();
+  }));
+  document.getElementById('searchForm').addEventListener('submit', event => {
+    event.preventDefault();
+    updateTools();
+  });
+  input.addEventListener('input', updateTools);
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
